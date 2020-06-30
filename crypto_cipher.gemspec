@@ -1,6 +1,10 @@
 require_relative 'lib/crypto_cipher/version'
 
 Gem::Specification.new do |spec|
+
+  spec.add_dependency 'openssl'
+  spec.add_dependency 'base64'
+
   spec.name          = "crypto_cipher"
   spec.version       = CryptoCipher::VERSION
   spec.authors       = ["esaud17"]
